@@ -1,0 +1,59 @@
+.shops-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .shop-card {
+    /* border: 1px solid #ccc; */
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+  }
+  .shop-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .shop-about {
+    margin-top: 4px;
+    font-size: 12px;
+    color: rgb(150, 150, 150);
+    font-weight: 600;
+  }
+  .shop-adress {
+    margin-top: 4px;
+    font-size: 14px;
+    color: rgb(120, 120, 1);
+    font-weight: 500;
+  }
+  .shop-latitude {
+    margin-top: 3px;
+    font-size: 10px;
+    color:rgb(138, 24, 4);
+    font-weight: 500;
+  }
+.shops-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin:15px 0px 5px;
+    
+}
+.shop-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-image{
+    width:20px;
+    height: 20px;
+}
+.link{
+  color: black;
+  text-decoration: none;
+}
+img{
+  cursor: pointer;
+}

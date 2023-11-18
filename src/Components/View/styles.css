@@ -1,0 +1,111 @@
+.view{
+    /* padding: 10px; */
+    /* background-color: rgb(20, 1, 1); */
+    /* color: white; */
+}
+.view-shop{
+    padding:0px 10px;
+    /* margin-bottom: 0px; */
+}
+.view-create{
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+.view-image{
+    width: 40px;
+    height: 40px;
+}
+
+.product-list-container {
+  margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product-item {
+    /* border: 1px solid #ccc; */
+    width: calc(50% - 15px);
+    padding: 10px 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+  }
+  
+  .product-name {
+    font-weight: bold;
+    font-size: medium;
+    max-width: 120px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow:hidden;
+  }
+  
+  .no-products {
+    font-style: italic;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+  }
+  .product-description{
+    font-size: small;
+    color: rgb(151, 151, 151);
+    margin-bottom: 7px;
+  }
+  .product-price{
+    font-size: small;
+    font-weight: 600;
+  }
+  .product-availability{
+    font-size:x-small;
+    color: rgb(207, 1, 1);
+    margin-bottom: 7px;
+  }
+  .tags{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tag{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background-color: #656565;
+    color: white;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+    position: relative;
+    font-size: small;
+  }
+  .tag svg{
+    top:-3px;
+    margin-left: 2px;
+    background-color: white;
+    color: black;
+    position: absolute;
+    
+  }
+  .edit-image{
+    width:27px;
+    height:27px;
+    margin-right: 5px;
+    margin-top:3px;
+  }
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .shop-image-view{
+    width:40px;
+    height:40px;
+  }
+  .your-products{
+    color: #372727;
+  }

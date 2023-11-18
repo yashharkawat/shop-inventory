@@ -1,0 +1,44 @@
+.container {
+  max-width: 400px;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.button {
+  background-color: #4caf50;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  
+}
+
+.error {
+  color: red;
+}
+
+.text {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signin-link {
+  color: #4caf50;
+}
