@@ -30,3 +30,11 @@
     font-weight: 500;
     font-size: small;
 }
+.profile-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.logout-image{
+    width:30px;
+    height: 25px;
+}

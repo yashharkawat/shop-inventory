@@ -29,7 +29,7 @@ const Body = () => {
     return (
         <div className="shops-container">
             <div className='shops-title'>Your Shops</div>
-            {shops.map((shop, index) => {
+            {(shops&& shops.length!==0) ?shops.map((shop, index) => {
                 if (shop.name && shop.name !== '') {
                     return (
                         <div key={index} className="shop-card">
@@ -49,7 +49,7 @@ const Body = () => {
                     );
                 }
                 return null;
-            })}
+            }): <div className="no-products">No Shops Added</div> }
             {
                 modal && <Modal
                     onOk={deleteShop}

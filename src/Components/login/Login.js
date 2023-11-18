@@ -29,7 +29,9 @@ const Login = () => {
     }));
     console.log({ filterData }, 'here');
     const currentUser = filterData.filter((data) => data.email === email)[0];
+    console.log({currentUser});
     dispatch(actions.changeCurrentUser(currentUser));
+    navigate("/");
   };
   const signInWithEmail = async (values) => {
     try {
@@ -38,11 +40,11 @@ const Login = () => {
         values.email,
         values.password
       );
-      console.log(values, 'here');
+      // console.log(values, 'here');
       const confirmUser = user.user;
 
       getUser(values.email);
-      navigate("/");
+      
       // console.log(selector);
     } catch (err) {
       console.log('err');

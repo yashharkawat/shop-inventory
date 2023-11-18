@@ -20,7 +20,7 @@ const userSlice = createSlice({
         state = {...initialState};
         
       } else {
-        state.shops=(action.payload.shops||state.shops);
+        state.shops=(action.payload.shops|| []);
         state.email = action.payload.email;
         state.name = action.payload.name;
         state.phone = action.payload.phone;

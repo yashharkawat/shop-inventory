@@ -29,9 +29,13 @@ const SignUp = () => {
     const userCollection = collection(db, "shopUsers");
     const data = await addDoc(userCollection, user);
 
+
     dispatch(
       actions.changeCurrentUser({ ...user, id: data.id })
     );
+    navigate("/");
+    // console.log({ ...user, id: data.id });
+  
   };
 
   const signIn = async (values) => {
@@ -39,13 +43,13 @@ const SignUp = () => {
       await createUserWithEmailAndPassword(auth, values.email, values.password);
 
       addUser({ email: values.email, name: values.name, phone: values.phone });
-      navigate("/");
+      
       // console.log(auth?.currentUser);
     } catch (err) {
       //setSignedIn(false);
       setError(err);
       //console.log('hello');
-      console.log(err);
+      // console.log(err);
     }
   };
 
